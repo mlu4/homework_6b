@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="html5reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Bun Bun Bake Shop</title>
+    </head>
+    <body>
+        <main class="details">
+            <header>
+                <nav>
+                    <ul class="nav_bar">
+                        <li id="nav_logo"><a href="index.html">BUN BUN <br><span>bake shop</span></a></li>
+                        <li class="nav_item"><a href="index.html">HOME</a></li>
+                        <li class="nav_item"><a href="about.html">ABOUT</a></li>
+                        <li class="nav_item"><a class="active_page" href="browse.html">ORDER</a></li>
+                        <li class="nav_item"><button id="location"><i class="fa fa-map-marker"></i> Your Location</button></li>
+                        <li class="nav_item" id="nav_account"><a href="account.html"><i class="fa">&#xf007;</i></a></li>
+                        <li class="nav_item"><button type="button" class="cart_btn"><i class="fa">&#xf07a;</i>(<span class="total-count"></span>)</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <h3><a href="index.html">Home</a> / <a href="browse.html">Order</a> / Product Details</h3>
+            <div class="product_details">
+                <div class="left_side">
+                    <img src="images/pumpkin_spice.jpg" alt="Pumpkin Spice Bun">
+                    <div class="details_dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Nutritional Details</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <h1>Ingredients</h1><br>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <br>
+                          <h1>Nutrition Facts</h1><br>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <h1>PUMPKIN SPICE CINNAMON BUN<br>$5</h1>
+                    <div class="quantity_select">
+                        <label for="quantity">Choose a quantity:</label>
+                        <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+                    </div>
+                    <div class="glaze_select">
+                        <label for="glaze">Choose a glaze:</label>
+                        <select name="glaze" id="glaze">
+                            <option text="none">None</option>
+                            <option text="sugar_milk">Sugar-Milk</option>
+                            <option text="vanilla_milk">Vanilla-Milk</option>
+                            <option text="chocolate">Double-Chocolate</option>
+                        </select>
+                    </div>
+                    <button data-name="Pumpkin Spice Cinnamon Bun" data-price="5.00" class="add-to-cart">Add to Cart</button>
+                    <p id="delivers_to"><i class="fa fa-map-marker"></i>Delivers to Pittsburgh, PA</p>
+                    <div class="adc_popup">
+                        <p id="popupText">Added to cart!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="other_flavors">
+                <h1>TRY OUR OTHER FLAVORS</h1>
+                <div class="slideshow">
+                    <div class="individual" id="orig">
+                        <img src="images/browse_image.jpg" alt="Original Bun">
+                        <p>Original Cinnamon Bun</p>
+                    </div>
+                    <div class="individual" id="blackberry">
+                        <img src="images/blackberry.jpg" alt="Blackberry Bun">
+                        <p>Blackberry Cinnamon Bun</p>
+                    </div>
+                    <div class="individual" id="walnut">
+                        <img src="images/walnut.jpg" alt="Walnut Bun">
+                        <p>Walnut Cinnamon Bun</p>
+                    </div>
+                    <div class="individual" id="gf">
+                        <img src="images/original_gf.jpg" alt="Original GF Bun">
+                        <p>Original (GF) Cinnamon Bun</p>
+                    </div>
+                    <div class="individual" id="caramel">
+                        <img src="images/caramel_pecan_bun.jpg" alt="Caramel Pecan Bun">
+                        <p>Caramel Pecan Cinnamon Bun</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="hours">
+                <h3>HOURS</h3>
+                <p>tue – fri <span class="tab"></span>9am – 5pm</p>
+                <p>sat – sun <span class="tab_2"></span>9am – 3pm</p>
+                <p>closed mondays</p>
+            </div>
+            <div class="location">
+                <h3>LOCATION</h3>
+                <p>PITTSBURGH</p>
+                <p>1234 Centre Avenue, Pittsburgh, PA 15219</p>
+            </div>
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <p>call: 123-456-7890</p>
+                <a href="contact.html">send us a message!</a>
+            </div>
+            <ul>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+            </ul>
+        </footer>
+    <script src="bakeshop.js"></script>
+    </body>
+</html>
